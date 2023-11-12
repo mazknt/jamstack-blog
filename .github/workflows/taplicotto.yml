@@ -7,7 +7,7 @@ on:
 
 defaults:
   run:
-    working-directory: taplicotto
+    working-directory: pages
 
 jobs:
   build:
