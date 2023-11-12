@@ -9,11 +9,6 @@ export const getStaticProps = async () => {
   const gears = await client.get({ endpoint: "gears" });
   const movie = await client.get({ endpoint: "movie" });
   const member = await client.get({ endpoint: "member" });
-  // console.log(member);
-  // console.log("------------------------------------------------");
-  // console.log(gears);
-  // console.log("------------------------------------------------");
-  // console.log(movie.image);
   return {
     props: {
       gears: gears,
@@ -59,9 +54,9 @@ export default function Top({ movie, member, gears }) {
         </div>
         <div className={TopStyle.worksContent}>
           <div className={TopStyle.worksRow}>
-            {movie.contents.map((mov) => {
+            {movie.contents.map((mov, index) => {
               return (
-                <div className={TopStyle.work}>
+                <div className={TopStyle.work} key={index}>
                   <Image
                     width={1000}
                     height={1000}
@@ -85,9 +80,9 @@ export default function Top({ movie, member, gears }) {
         </div>
         <div className={TopStyle.memberContents}>
           <div className={TopStyle.memberRow}>
-            {member.contents.map((mem) => {
+            {member.contents.map((mem, index) => {
               return (
-                <div>
+                <div key={index}>
                   <div>
                     <Image
                       width={1000}
@@ -119,9 +114,9 @@ export default function Top({ movie, member, gears }) {
         </div>
         <div className={TopStyle.gearContainer}>
           <div className={TopStyle.gearImages}>
-            {gears.contents.map((gear) => {
+            {gears.contents.map((gear, index) => {
               return (
-                <div className={TopStyle.Image}>
+                <div className={TopStyle.Image} key={index}>
                   <Image
                     height={301}
                     width={422}
@@ -135,11 +130,6 @@ export default function Top({ movie, member, gears }) {
         </div>
         <Button />
       </div>
-      {/* {console.log(member.contents)}
-      {console.log("------------------------------------------------")}
-      {console.log(gears.contents)}
-      {console.log("------------------------------------------------")}
-      {console.log(movie.contents)} */}
     </DefaultLayout>
   );
 }

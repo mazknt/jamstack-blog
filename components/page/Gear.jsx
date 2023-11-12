@@ -17,10 +17,10 @@ export const Gear = (props) => {
         <div style={{color: '#111111', fontSize: 20, fontFamily: 'Avenir', fontWeight: '900', letterSpacing: 1, wordWrap: 'break-word'}}>Gear rental available. </div>
     </div>
     <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 48, display: 'flex'}}>
-        {gears.contents.map((gear)=>{
+        {gears.contents.map((gear, index)=>{
             {console.log(gear.gearName_isRental)}
             return(
-        <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 48, display: 'inline-flex'}}>
+        <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 48, display: 'inline-flex'}} key={index}>
             <div style={{width: 422, height: 301, borderRadius: 4, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
                 <Image width={422} height={301} style={{ borderRadius: 2}} src={gear.image.url} />
             </div>
@@ -30,9 +30,9 @@ export const Gear = (props) => {
                     <div style={{color: '#111111', fontSize: 36, fontFamily: 'Avenir', fontWeight: '800', wordWrap: 'break-word'}}>{gear.title_English}</div>
                 </div>
                 <div style={{alignSelf: 'stretch', height: 167, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
-                    {gear.gearName_isRental.map((gear_rental) => {
+                    {gear.gearName_isRental.map((gear_rental, index) => {
                         return (
-                            <div style={{paddingLeft: 24, paddingRight: 24, justifyContent: 'center', alignItems: 'flex-end', gap: 24, display: 'inline-flex'}}>
+                            <div style={{paddingLeft: 24, paddingRight: 24, justifyContent: 'center', alignItems: 'flex-end', gap: 24, display: 'inline-flex'}} key={index}>
                                 <div style={{color: '#111111', fontSize: 20, fontFamily: 'Avenir', fontWeight: '900', wordWrap: 'break-word'}}>{gear_rental.gear_name}</div>
                                 {gear_rental.is_rental ? (
                                     <div style={{paddingLeft: 8, paddingRight: 8, paddingTop: 4, paddingBottom: 4, borderRadius: 100, border: '1px #111111 solid', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>

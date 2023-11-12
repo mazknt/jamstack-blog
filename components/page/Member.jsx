@@ -13,9 +13,9 @@ export const Member = (props) => {
                 <span className={MemberStyle.before}></span>
             </div>
             <div className={MemberStyle.memberItem}>
-              {member.contents.map((mem) => {
+              {member.contents.map((mem, index) => {
                 return (
-                  <div className={MemberStyle.name_roll_status}>
+                  <div className={MemberStyle.name_roll_status} key={index}>
                     <div className={MemberStyle.name_roll}>
                       <Image height={841} width={610} src={mem.image.url} className={MemberStyle.image}/>
                       <div className={MemberStyle.name}>
