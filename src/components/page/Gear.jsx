@@ -1,7 +1,6 @@
 import DefaultLayout from "../templates/DefaultLayout"
-import MemberStyle from "../../styles/Member/Member.module.css"
 import Image from "next/image"
-import gears from "../../pages/gears"
+// import gears from "../../pages/gears"
 
 export const Gear = (props) => {
   const { gears } = props

@@ -1,5 +1,5 @@
 import DefaultLayout from "../templates/DefaultLayout"
-import MemberStyle from "../../styles/Member/Member.module.css"
+import MemberStyle from "../../../styles/Member/Member.module.css"
 import Image from "next/image"
 
 export const Member = (props) => {

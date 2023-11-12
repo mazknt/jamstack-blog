@@ -1,8 +1,8 @@
-import TopStyle from "../styles/Top/Top.module.css";
+import TopStyle from "../../styles/Top/Top.module.css";
 import { Button } from "../components/atomics/Button";
-import DefaultLayout from "/components/templates/DefaultLayout.jsx";
+import DefaultLayout from "../components/templates/DefaultLayout.jsx";
 import Image from "next/image";
-import { client } from "../libs/client";
+import { client } from "../../libs/client";
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {

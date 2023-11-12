@@ -3,18 +3,13 @@ import { Button } from "../atomics/Button"
 import DefaultLayout from "./DefaultLayout"
 import Image from "next/image"
 // import { client } from "../libs/client";
-import { client } from "../../libs/client";
+import { client } from "../../../libs/client";
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
     const gears = await client.get({ endpoint: "gears" });
     const movie = await client.get({ endpoint: "movie" });
     const member = await client.get({ endpoint: "member" });
-    console.log(member)
-    console.log("------------------------------------------------")
-    console.log(gears)
-    console.log("------------------------------------------------")
-    console.log(movie)
     return {
       props: {
         gears: gears,
