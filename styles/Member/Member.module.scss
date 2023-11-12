@@ -1,0 +1,52 @@
+.members {
+  padding: 80px 208px;
+  & .memberSectionTitle {
+    text-align: center;
+    & .before {
+      display: inline-block;
+      width: 48px;
+      background: #111111;
+      border: 1px solid #111111;
+    }
+    & .works {
+      font-family: Avenir;
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 49px;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+  }
+  & .image {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.name_roll_status {
+  margin-top: 80px;
+  & .name_roll {
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+    margin-bottom: 48px;
+    & .image {
+      display: block;
+    }
+  }
+  & .introduce_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 48px;
+    & .introduce {
+      color: "#111111";
+      font-size: 16;
+      font-family: "Arial";
+      font-weight: "400";
+      line-height: 2;
+      word-wrap: "break-word";
+      width: 400px;
+    }
+  }
+}

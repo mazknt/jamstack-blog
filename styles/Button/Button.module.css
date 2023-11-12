@@ -1,0 +1,15 @@
+.showbutton {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: Hug(262px);
+  height: Hug(54px);
+  padding: 16px 80px 16px 80px;
+  border-radius: 20px;
+  gap: 4px;
+  background: #111111;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1607843137);
+  color: white;
+  margin: 0 auto;
+}/*# sourceMappingURL=Button.module.css.map */

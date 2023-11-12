@@ -1,0 +1,44 @@
+.footerWrapper {
+  padding: 60px 208px 60px 208px;
+  gap: 74px;
+  background-color: black;
+  color: white;
+  & .footerContents {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 259px;
+    & .footerLeft {
+      gap: 183px;
+      position: relative;
+      & .logo {
+        font-size: 40px;
+      }
+      & .snsIcons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        white-space: nowrap;
+      }
+    }
+    & .footerMenuList {
+      gap: 24px;
+      list-style: none;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      & .footerMenu {
+        margin-top: 24px;
+      }
+    }
+  }
+  & .footerCopyRight {
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: Avenir;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+}
