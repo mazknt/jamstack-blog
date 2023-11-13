@@ -1,0 +1,16 @@
+name: s3
+
+on:
+  push:
+    branches:
+      - main
+
+defaults:
+  run:
+    working-directory: src
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: aws s3 sync . s3://taplicotto-test1 --exact-timestamps --region ap-northeast-3
