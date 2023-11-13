@@ -21,7 +21,7 @@ export const Footer = () => {
             </ul>
         </div>
         <div className={FooterStyle.footerCopyRight}>
-        <span>©2023 taplicotto. </span>
+        <span>©2023 taplicotto.</span>
         </div>
     </div>
   )
