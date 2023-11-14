@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import  HeaderStyle  from "../../../styles/Header/Header.module.css"
+import  HeaderStyle  from "../../styles/Header/Header.module.css"
 
 export const Header = () => {
     

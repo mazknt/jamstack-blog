@@ -1,5 +1,5 @@
 import { Gear } from "../components/page/Gear";
-import { client } from "../../libs/client";
+import { client } from "../libs/client";
 
 export const getStaticProps = async () => {
   //   const gears = await client.get({ endpoint: "gears" });
