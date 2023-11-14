@@ -17,4 +17,4 @@ jobs:
           aws-region: ap-northeast-3 # AWSリージョンを指定
 
       - name: s3
-        run: aws s3 sync .out/ s3://taplicotto-test1 --exact-timestamps
+        run: aws s3 sync out/ s3://taplicotto-test1 --exact-timestamps
